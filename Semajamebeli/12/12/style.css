@@ -1,0 +1,597 @@
+@font-face {
+  font-family: "Vogue Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Vogue Regular"), url("./files/fonts/Vogue.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 35px 120px;
+  box-sizing: border-box;
+}
+
+.logo p {
+  font-family: "Vogue Regular", sans-serif;
+  font-size: 36px;
+  color: white;
+}
+
+.navigation ul {
+  list-style: none;
+
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.auth-tools {
+  display: flex;
+  gap: 20px;
+}
+
+.auth-tools p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.auth-tools a {
+  text-decoration: none;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-header img {
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.headline {
+  font-family: "Vogue Regular";
+  font-size: 288px;
+  font-weight: 400;
+  color: white;
+  z-index: 1001;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-button {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  gap: 17px;
+  padding: 18px 23px;
+}
+
+.header-bott-part {
+  max-width: 250px;
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  margin-top: 100px;
+}
+
+.header-bott-part p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header-button p {
+  font-family: Roboto;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.header-button img {
+  width: 20px;
+}
+
+.our-team {
+  width: 100vw;
+  padding: 105px 120px;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team h1 {
+  color: white;
+  font-family: "Vogue Regular";
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.personal {
+  margin: 105px 0px 84px 0px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  width: 387px;
+  height: 419px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.person h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 35px;
+  color: white;
+}
+
+.person p {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+}
+
+.our-team .button {
+  display: inline-flex;
+  height: 41px;
+  padding: 20px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.our-team .button p {
+  margin: 0;
+  padding: 0;
+}
+
+.our-team .button img {
+  width: 24px;
+}
+
+.todays-stories {
+  background-color: rgb(255, 255, 255);
+  padding: 135px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todays-stories h1 {
+  color: rgb(2, 2, 2);
+  font-family: "Vogue Regular";
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.carousel-items {
+  margin-bottom: 135px;
+}
+
+.more-on-aurora {
+  margin-top: 130px;
+}
+
+.aurora-button {
+  display: inline-flex;
+  height: 41px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+
+  border-radius: 5px;
+  border: 2px solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aurora-button p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  width: 100vw;
+  padding: 50px 120px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-logo {
+  font-family: "Vogue Regular";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aurora-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aurora-info p {
+  max-width: 285px;
+}
+
+.aurora-site-map {
+  display: flex;
+  gap: 90px;
+}
+
+.aurora-site-map li {
+  list-style: none;
+}
+
+/**About Us**/
+
+.hero-header-about {
+  width: 100vw;
+  background-color: #000000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero-header-about img {
+  width: 95vw;
+  object-fit: cover;
+
+  padding: 95px 120px;
+}
+
+.about-header-information {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.about-header-information p {
+  max-width: 500px;
+  color: white;
+}
+.about-header-information button {
+  display: inline-flex;
+  height: 41px;
+  padding: 20px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.plans-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 105px 120px;
+}
+
+.plans-area h1 {
+  color: #000;
+  text-align: center;
+  font-family: "Vogue Regular";
+  font-size: 48px;
+  max-width: 550px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plans-container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+
+  margin-top: 100px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 40px 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  color: #747171;
+}
+
+.plan button,
+.plan-selected button {
+  display: flex;
+  max-width: 134px;
+  height: 41px;
+  padding: 20px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+
+  border: 2px solid #747171;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.plan h3,
+.plan-selected h3 {
+  color: var(--Black, #020202);
+  text-align: center;
+  font-family: "Vogue regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-info p,
+.plan-selected p {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.plan-info span {
+  color: #747171;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plan li,
+.plan-selected li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.plan li::before {
+  content: url("./files/images/icons 1/checkmark.svg");
+  margin-right: 10px;
+}
+
+.plan-selected {
+  color: white;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 40px 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.plan-selected p {
+  color: white;
+  font-size: 19px;
+}
+.plan-selected h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.plan-selected li {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.plan-selected li::before {
+  content: url("./files/images/icons 1/checkmark white.svg");
+  margin-right: 10px;
+}
+
+.plan-selected span {
+  color: var(--Grey-2, #bab6b6);
+  font-size: 17px;
+}
+
+.plan-selected button {
+  color: white;
+  background-color: #000;
+  border: 2.308px solid var(--White, #fff);
+}
+
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact img {
+  width: 100vw;
+  height: 1016px;
+  object-fit: cover;
+
+}
+
+
+.headline-2{
+  width: 259px;
+  height: 43px;
+  top: 347px;
+  left: 591px;
+  font-family: Vogue;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  color: white;
+}
+
+.frame {
+  width: 369px;
+  height: 200px;
+  top: 478px;
+  left: 536px;
+  position: absolute;
+  background-color: white;
+}
+
+.section {
+  width: 100%;
+  padding: 12px 20px;
+  border-bottom: 1px solid #BAB6B6;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+}
+
+.section h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.last-button {
+  width: 114px;
+  height: 41px;
+  top: 719px;
+  left: 664px;
+  padding: 20px 24px;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  gap: 10px;
+  background: linear-gradient(0deg, rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)),
+              linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  color: #FFFFFF; 
+  font-weight: bold; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.last-button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+              linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+
+
